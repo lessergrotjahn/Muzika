@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@drawable/list_background">
+        
+        <RelativeLayout
+            android:id="@+id/note1"
+            android:background="@drawable/list_background"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/note2"
+            android:layout_marginEnd="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <Button
+                android:id="@+id/note1Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_note_green" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/note2"
+            android:background="@drawable/list_background_red"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/note3"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/note2Button"
+                android:background="@drawable/ic_note_red"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/note3"
+            android:background="@drawable/list_background_blue"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/note3Button"
+                android:background="@drawable/ic_note_blue"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/songTxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/note1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="3dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Song Name"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

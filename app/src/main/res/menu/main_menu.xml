@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="1"
+        android:title="Save Playlists"/>
+
+    <item
+        android:id="@+id/action_toggle_note_1"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="2"
+        android:title="Disable Note 1"/>
+
+    <item
+        android:id="@+id/action_toggle_note_2"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="3"
+        android:title="Disable Note 2"/>
+
+    <item
+        android:id="@+id/action_toggle_note_3"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="4"
+        android:title="Disable Note 3"/>
+</menu>
